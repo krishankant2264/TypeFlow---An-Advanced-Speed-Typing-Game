@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>Krishankant Singh - Data Scientist</title>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+<style>
+
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0
+}
+
+body{
+    font-family:Arial;
+    color:#111
+}
+
+header,footer{
+    background:#09244a;
+    color:white;
+    padding:15px 4%
+}
+
+header h1{
+    display:inline-block
+}
+
+header span{
+    margin-left:10px
+}
+
+nav{
+    float:right;
+    margin-top:8px
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:25px;
+    font-weight:bold
+}
+
+nav a:hover{
+    color:#ffd400
+}
+
+.clear{
+    clear:both
+}
+
+
+/* HOME */
+
+.home{
+    background:#edf6ff;
+    padding:35px 18%;
+    min-height:325px
+}
+
+.home-text{
+    width:55%;
+    float:left
+}
+
+.home h2{
+    font-size:36px;
+    color:#09244a
+}
+
+.home h3{
+    font-size:25px;
+    color:#1762c1
+}
+
+.home p{
+    font-size:18px;
+    margin:8px 0 18px
+}
+
+.btn{
+    background:#09244a;
+    color:white;
+    padding:10px 30px;
+    text-decoration:none
+}
+
+.btn:hover{
+    background:#1762c1
+}
+
+
+.photo{
+    width:280px;
+    height:280px;
+    border-radius:50%;
+    border:7px solid white;
+    box-shadow:0 2px 8px #999;
+    object-fit:cover;
+    float:right
+}
+
+
+/* MAIN */
+
+main{
+    width:75%;
+    margin:auto;
+    padding:25px 0
+}
+
+.about,.skills,.edu{
+    float:left
+}
+
+.about{
+    width:32%
+}
+
+.skills{
+    width:25%
+}
+
+.edu{
+    width:43%
+}
+
+h2{
+    color:#09244a;
+    margin-bottom:10px
+}
+
+.skills ul{
+    padding-left:20px
+}
+
+
+/* EDUCATION */
+
+table{
+    width:100%;
+    border-collapse:collapse
+}
+
+th,td{
+    border:1px solid #bbb;
+    padding:8px;
+    text-align:left
+}
+
+
+/* PROJECTS */
+
+.projects{
+    width:65%;
+    float:left;
+    padding-right:25px
+}
+
+.contact{
+    width:35%;
+    float:right
+}
+
+.card{
+    width:31%;
+    float:left;
+    border:1px solid #ccc;
+    padding:10px;
+    margin-right:2%;
+    min-height:125px;
+    box-shadow:0 1px 3px #ddd
+}
+
+.card h3{
+    font-size:16px;
+    color:#09244a
+}
+
+.card p{
+    font-size:13px;
+    margin:8px 0
+}
+
+.card a{
+    color:#06c;
+    text-decoration:none;
+    font-weight:bold
+}
+
+
+/* CONTACT */
+
+input,textarea,select{
+    width:100%;
+    padding:8px;
+    margin:3px 0 6px;
+    border:1px solid #ccc
+}
+
+textarea{
+    height:65px
+}
+
+button{
+    padding:9px 20px;
+    border:0;
+    font-weight:bold;
+    cursor:pointer
+}
+
+.send{
+    background:#09244a;
+    color:white
+}
+
+.send:hover{
+    background:#1762c1
+}
+
+
+/* SOCIAL */
+
+.connect{
+    margin-top:30px
+}
+
+.social a{
+    font-size:30px;
+    text-decoration:none;
+    margin-right:20px
+}
+
+.in{
+    color:#1684c7
+}
+
+.git{
+    color:#000
+}
+
+.mail{
+    color:#d44
+}
+
+
+/* FOOTER */
+
+footer{
+    text-align:center;
+    margin-top:20px
+}
+
+
+/* RESPONSIVE */
+
+@media(max-width:700px){
+
+    nav{
+        float:none;
+        margin-top:12px
+    }
+
+    nav a{
+        margin:5px;
+        font-size:13px
+    }
+
+    .home{
+        padding:25px 5%;
+        text-align:center
+    }
+
+    .home-text,.photo{
+        float:none;
+        width:100%
+    }
+
+    .photo{
+        width:220px;
+        height:220px;
+        margin-top:20px
+    }
+
+    main{
+        width:90%
+    }
+
+    .about,.skills,.edu,.projects,.contact{
+        width:100%;
+        float:none;
+        padding:10px 0
+    }
+
+    .card{
+        width:100%;
+        float:none;
+        margin:10px 0
+    }
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<!-- HEADER -->
+
+<header>
+
+<h1>Krishankant Singh</h1>
+
+<span>Data Scientist</span>
+
+
+<nav>
+
+<a href="#home">Home</a>
+
+<a href="#about">About</a>
+
+<a href="#skills">Skills</a>
+
+<a href="#education">Education</a>
+
+<a href="#projects">Projects</a>
+
+<a href="#contact">Contact</a>
+
+</nav>
+
+
+<div class="clear"></div>
+
+</header>
+
+
+
+<!-- HOME -->
+
+<section class="home" id="home">
+
+
+<div class="home-text">
+
+<h2>Hi, I’m Krishankant Singh</h2>
+
+<h3>Data Scientist</h3>
+
+
+<p>
+
+I am an aspiring Data Scientist with a strong interest in
+data analysis, machine learning and artificial intelligence.
+I enjoy working with data, finding meaningful patterns and
+building machine learning models to solve real-world problems.
+
+</p>
+
+
+<a class="btn" href="#">Download CV</a>
+
+</div>
+
+
+<img
+class="photo"
+src="KR_PHOTO.jpg"
+alt="Krishankant Singh"
+>
+
+
+<div class="clear"></div>
+
+</section>
+
+
+
+<!-- MAIN -->
+
+<main>
+
+
+<!-- ABOUT -->
+
+<section id="about" class="about">
+
+<h2>♟ About Me</h2>
+
+
+<p>
+
+I am a Computer Science Engineering student with a strong
+interest in Data Science, Machine Learning and Artificial
+Intelligence. I enjoy analyzing data, solving complex problems
+and developing data-driven solutions. My goal is to build
+intelligent applications and continuously improve my skills
+through practical projects and real-world datasets.
+
+</p>
+
+</section>
+
+
+
+<!-- SKILLS -->
+
+<section id="skills" class="skills">
+
+<h2>&lt;/&gt; Skills</h2>
+
+
+<ul>
+
+<li>Python</li>
+
+<li>Data Analysis</li>
+
+<li>Machine Learning</li>
+
+<li>NumPy & Pandas</li>
+
+<li>Matplotlib & Seaborn</li>
+
+<li>SQL & DBMS</li>
+
+</ul>
+
+</section>
+
+
+
+<!-- EDUCATION -->
+
+<section id="education" class="edu">
+
+<h2>◆ Education</h2>
+
+
+<table>
+
+
+<tr>
+
+<th>Qualification</th>
+
+<th>Institute</th>
+
+<th>Year</th>
+
+<th>Percentage</th>
+
+</tr>
+
+
+<tr>
+
+<td>B.Tech CSE</td>
+
+<td>GLA University</td>
+
+<td>2026</td>
+
+<td>8.0 CGPA</td>
+
+</tr>
+
+
+<tr>
+
+<td>12th</td>
+
+<td>Delhi Public School</td>
+
+<td>2025</td>
+
+<td>80%</td>
+
+</tr>
+
+
+<tr>
+
+<td>10th</td>
+
+<td>Delhi Public School</td>
+
+<td>2023</td>
+
+<td>85%</td>
+
+</tr>
+
+
+</table>
+
+</section>
+
+
+
+<div class="clear"></div>
+
+
+
+<!-- PROJECTS -->
+
+<section id="projects" class="projects">
+
+
+<h2>▣ Projects</h2>
+
+
+
+<div class="card">
+
+<h3>Student Performance Analysis</h3>
+
+<p>
+
+A data analysis project that studies student performance
+using Python, Pandas and visualization techniques.
+
+</p>
+
+<a href="#">View Project</a>
+
+</div>
+
+
+
+<div class="card">
+
+<h3>Fake News Detection</h3>
+
+<p>
+
+A machine learning project that predicts whether a news
+article is real or fake using classification techniques.
+
+</p>
+
+<a href="#">View Project</a>
+
+</div>
+
+
+
+<div class="card">
+
+<h3>Electricity Management System</h3>
+
+<p>
+
+A data-driven application designed to manage electricity
+records using Python and database technologies.
+
+</p>
+
+<a href="#">View Project</a>
+
+</div>
+
+
+
+<div class="clear"></div>
+
+
+
+<!-- CONNECT -->
+
+<div class="connect">
+
+<h2>🔗 Connect with me</h2>
+
+
+<div class="social">
+
+<a class="in" href="#">in</a>
+
+<a class="git" href="#">●</a>
+
+<a class="mail" href="#">✉</a>
+
+</div>
+
+</div>
+
+
+</section>
+
+
+
+<!-- CONTACT -->
+
+<section id="contact" class="contact">
+
+
+<h2>✉ Contact Me</h2>
+
+
+<form>
+
+
+<label>Name</label>
+
+<input
+type="text"
+placeholder="Enter your name"
+>
+
+
+
+<label>Email</label>
+
+<input
+type="email"
+placeholder="Enter your email"
+>
+
+
+
+<label>Subject</label>
+
+
+<select>
+
+<option>Select Subject</option>
+
+<option>Data Science Project</option>
+
+<option>Machine Learning</option>
+
+<option>Data Analysis</option>
+
+<option>General Query</option>
+
+</select>
+
+
+
+<label>Message</label>
+
+
+<textarea
+placeholder="Type your message..."
+></textarea>
+
+
+
+<button class="send">
+Send Message
+</button>
+
+
+<button type="reset">
+Reset
+</button>
+
+
+</form>
+
+</section>
+
+
+
+<div class="clear"></div>
+
+
+</main>
+
+
+
+<!-- FOOTER -->
+
+<footer>
+
+© 2026 Krishankant Singh. All Rights Reserved.
+
+</footer>
+
+
+</body>
+
+</html>
