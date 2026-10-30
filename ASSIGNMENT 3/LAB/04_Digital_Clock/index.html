@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Digital Clock</title>
+  <style>
+    body { font-family: Arial, sans-serif; background: #111827; color: white; display: grid; place-items: center; min-height: 100vh; }
+    .clock-box { text-align: center; padding: 30px; }
+    #clock { font-size: clamp(2.5rem, 10vw, 5rem); font-weight: bold; letter-spacing: 3px; }
+    #date { font-size: 1.2rem; color: #cbd5e1; }
+  </style>
+</head>
+<body>
+  <div class="clock-box">
+    <h1>Digital Clock</h1>
+    <div id="clock">00:00:00</div>
+    <p id="date"></p>
+  </div>
+
+  <script>
+    function updateClock() {
+      const now = new Date();
+
+      // Use the browser's local time.
+      document.getElementById("clock").textContent =
+        now.toLocaleTimeString();
+
+      document.getElementById("date").textContent =
+        now.toLocaleDateString(undefined, {
+          weekday: "long",
+          year: "numeric",
+          month: "long",
+          day: "numeric"
+        });
+    }
+
+    updateClock();              // Show the time immediately.
+    setInterval(updateClock, 1000); // Update every second.
+  </script>
+</body>
+</html>

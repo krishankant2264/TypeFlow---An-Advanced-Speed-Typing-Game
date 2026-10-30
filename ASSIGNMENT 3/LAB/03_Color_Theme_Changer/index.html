@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Color Theme Changer</title>
+  <style>
+    body { font-family: Arial, sans-serif; text-align: center; padding: 60px 15px; background: white; color: #222; transition: 0.3s; }
+    button { padding: 12px 18px; margin: 8px; border: 0; border-radius: 6px; cursor: pointer; }
+    .dark { background: #202124; color: white; }
+    .blue { background: #dceeff; color: #12345a; }
+    .green { background: #dff5e5; color: #164b2b; }
+  </style>
+</head>
+<body id="page">
+  <h1>Change Color Theme</h1>
+  <p>Select a theme for this page.</p>
+  <button onclick="changeTheme('light')">Light</button>
+  <button onclick="changeTheme('dark')">Dark</button>
+  <button onclick="changeTheme('blue')">Blue</button>
+  <button onclick="changeTheme('green')">Green</button>
+
+  <script>
+    function changeTheme(themeName) {
+      const page = document.getElementById("page");
+
+      // Remove the previous theme before applying the selected one.
+      page.className = "";
+
+      if (themeName !== "light") {
+        page.classList.add(themeName);
+      }
+    }
+  </script>
+</body>
+</html>
